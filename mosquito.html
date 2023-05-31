@@ -223,7 +223,7 @@
             dataTable.update(brushedData && brushedData.length > 0 ? brushedData : data, data.columns)
         }
 
-        d3.csv("Mosquito.csv")
+        d3.csv("https://raw.githubusercontent.com/mygummy/IV_project/main/Mosquito.csv")
             .then(csvData => {
                 csvData.forEach(d => {
                     d["mosquito_activity"] = +d["모기활동지수"];
